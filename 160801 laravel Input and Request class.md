@@ -30,4 +30,27 @@ In another example, I use it for rendering my table....
 {!! mydata->appends(['parent'=>Input::get('parent')])->render() !!}
 ```
 
-Thanks for your attention. You're very kind.
+How about using Input in Laravel 5.2^? You just need not modify anything, because the class Input has been replaced with class Request.
+
+So where ever you need to input something instead of using
+```
+Input:: 
+```
+use
+```
+Request::
+```
+And if you get error something about 'should not use statically' just add this at the top of your file
+```
+use Request;
+```
+If you already have this line:
+
+```
+use Illuminate\Http\Request;
+```
+delete it because you can't have two classes with the same name in one file
+
+Thanks for your attention. You're very kind. 
+
+Source: http://stackoverflow.com/questions/31696679/laravel-5-class-input-not-found
