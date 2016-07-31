@@ -50,3 +50,8 @@ Hope it helpful...
 
 See directly from the source:
 - https://github.com/Nayjest/Grids
+- 
+
+If you want some alternatives, you may try these:
+- https://github.com/zofe/rapyd-laravel (also includes widgets datatable, form, datatree, data filter, etc)
+- https://github.com/zofe/datagrid
